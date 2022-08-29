@@ -1,0 +1,34 @@
+.boxTitle {
+    text-align: center;
+
+    h3 {
+        font-size  : 22px;
+        line-height: 33px;
+    }
+
+    p {
+        font-size  : 18px;
+        line-height: 27px;
+    }
+}
+
+.boxButton {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boxPass {
+    cursor   : pointer;
+    font-size: 16px;
+    position : absolute;
+    top      : 74px;
+    right    : 12px;
+}
+
+.boxConfirm {
+    cursor   : pointer;
+    font-size: 16px;
+    position : absolute;
+    top      : 160px;
+    right    : 12px;
+}

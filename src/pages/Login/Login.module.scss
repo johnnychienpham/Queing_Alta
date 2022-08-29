@@ -1,0 +1,92 @@
+@mixin clt($color) {
+    color: $color;
+}
+
+.login {
+    width     : 1440px;
+    height    : 810px;
+    margin    : 0 auto;
+    position  : relative;
+    background: var(--bglogin);
+}
+
+.loginLeft {
+    position: relative;
+    width   : calc(100% - 848px);
+
+    .boxImg {
+        position: absolute;
+        width   : 170px;
+        height  : 136px;
+        left    : 208px;
+        top     : 82px;
+    }
+
+    .formMain {
+        position: absolute;
+        top     : 293px;
+        margin  : 0 auto;
+        left    : 94px;
+
+        .boxEye {
+            font-size: 16px;
+            position : absolute;
+            right    : 12px;
+            top      : 128px;
+            cursor   : pointer;
+            z-index  : 10;
+        }
+
+        .error {
+            font-size    : 14px;
+            line-height  : 21px;
+            color        : red;
+            margin-bottom: 16px;
+        }
+
+        .boxLink {
+            margin-bottom: 19px;
+
+            a {
+                font-size  : 14px;
+                line-height: 21px;
+                color      : var(--red);
+            }
+        }
+    }
+}
+
+.loginRight {
+    width     : 848px;
+    height    : 810px;
+    position  : relative;
+    background: var(--white);
+
+    .boxImg {
+        position: absolute;
+        width   : 605px;
+        height  : 614.06px;
+        bottom  : 83px;
+        left    : 79px;
+    }
+
+    .boxTitle {
+        position: absolute;
+        left    : 454px;
+        bottom  : 302px;
+        @include clt(#ff7506);
+
+        .system {
+            font-size  : 34px;
+            line-height: 51px;
+            font-weight: normal;
+        }
+
+        .manage {
+            font-weight   : 900;
+            font-size     : 36px;
+            line-height   : 54px;
+            text-transform: uppercase;
+        }
+    }
+}

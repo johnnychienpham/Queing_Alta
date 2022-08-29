@@ -1,0 +1,52 @@
+.boxInfo {
+    width        : 1112px;
+    height       : 397px;
+    box-shadow   : 0px 2px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 12px;
+    background   : var(--white);
+    margin-left  : 24px;
+    margin-top   : 80px;
+
+    .Info {
+        padding-top : 40px;
+        padding-left: 24px;
+
+        .boxAvatar {
+            width   : 248px;
+            height  : 251px;
+            position: relative;
+
+            .camera {
+                position     : absolute;
+                bottom       : 0;
+                right        : 32px;
+                width        : 45px;
+                height       : 45px;
+                background   : var(--orange);
+                border-radius: 50%;
+                text-align   : center;
+                font-size    : 25px;
+                color        : var(--white);
+                border       : 2px solid var(--white);
+
+                i {
+                    line-height: 45px;
+                }
+            }
+
+            h3 {
+                font-size  : 24px;
+                line-height: 36px;
+                text-align : center;
+            }
+        }
+
+        .Left {
+            margin-left: 24px;
+        }
+
+        .Right {
+            margin-left: 24px;
+        }
+    }
+}
